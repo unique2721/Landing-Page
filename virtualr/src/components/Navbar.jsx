@@ -45,7 +45,7 @@ const Navbar = () => {
           </div>
         </div>
         {toggleMenu && (
-          <div className=" lg:hidden fixed right-0 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center">
+          <div className="lg:hidden fixed right-0 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center">
             <ul>
               {navItems.map((navItem, index) => (
                 <li className=" py-4" key={index}>
