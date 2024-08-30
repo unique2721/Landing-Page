@@ -38,12 +38,35 @@ const Navbar = () => {
               Create an account
             </a>
           </div>
+          <div className="lg:hidden md:flex flex-col justify-end">
+            <button onClick={toggleButton}>
+              {toggleMenu ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
-        <div className="lg:hidden md:flex flex-col justify-end">
-          <button onClick={toggleButton}>
-            {toggleMenu ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
+        {toggleMenu && (
+          <div className=" lg:hidden fixed right-0 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center">
+            <ul>
+              {navItems.map((navItem, index) => (
+                <li className=" py-4" key={index}>
+                  <a href={navItem.href}>{navItem.label}</a>
+                </li>
+              ))}
+            </ul>
+            <div className="flex space-x-6">
+              {" "}
+              <a className="py-2 px-3 border rounded-md" href="#">
+                Sign in
+              </a>
+              <a
+                className="py-2 px-3 bg-gradient-to-r from-orange-500 to-orange-800 rounded-md"
+                href="#"
+              >
+                Create an account
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
