@@ -1,10 +1,10 @@
-import { pricingOptions } from "../constants/constants";
+import { features, pricingOptions } from "../constants/constants";
 import { CheckCircle2 } from "lucide-react";
 
 const Pricing = () => {
   return (
     <div className="mt-20">
-      <h1 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 bg-neutral-900 tracking-wider">
+      <h1 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wider">
         Pricing
       </h1>
       <div className="flex flex-wrap">
@@ -25,6 +25,17 @@ const Pricing = () => {
                 </span>
                 <span className="text-neutral-400 tracking-tight">/Month</span>
               </p>
+              <ul>
+                {pricingOption.features.map((feature, index) => (
+                  <li key={index} className="flex  mt-8">
+                    <CheckCircle2 />
+                    <span className="ml-2"> {feature}</span>
+                  </li>
+                ))}
+              </ul>
+              <button className=" inline-flex justify-center items-center mt-20 w-full border border-orange-800 rounded-md p-3 tracking-tight hover:bg-orange-900 transition duration-200">
+                Subscribe
+              </button>
             </div>
           </div>
         ))}
