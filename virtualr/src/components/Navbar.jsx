@@ -28,11 +28,14 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="hidden lg:flex justify-center items-center space-x-12">
-            <a className="py-2 px-3 border rounded-md" href="#">
+            <a
+              className="py-2 px-3 border rounded-md hover:border-neutral-400"
+              href="#"
+            >
               Sign in
             </a>
             <a
-              className="py-2 px-3 bg-gradient-to-r from-orange-500 to-orange-800 rounded-md"
+              className="py-2 px-3 bg-gradient-to-r from-orange-500 to-orange-800 rounded-md hover:from-orange-500 hover:to-orange-700 transition duration-100"
               href="#"
             >
               Create an account
