@@ -17,12 +17,15 @@ const Hero = () => {
       <div>
         <button className="flex justify-center space-x-4 my-10">
           <a
-            className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
+            className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md hover:from-orange-600 hover:to-orange-600"
             href="#"
           >
             Start for free
           </a>
-          <a className="py-3 px-4 mx-3 border rounded-md" href="#">
+          <a
+            className="py-3 px-4 mx-3 border rounded-md hover:border-neutral-400"
+            href="#"
+          >
             Documentation
           </a>
         </button>

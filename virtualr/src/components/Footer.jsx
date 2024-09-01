@@ -12,6 +12,7 @@ const Footer = () => {
           <ul className="flex flex-col tedxt  text-neutral-400">
             {resourcesLinks.map((resourcesLink, index) => (
               <a
+                key={index}
                 className="mb-2 hover:text-neutral-200"
                 href={resourcesLink.href}
               >
@@ -25,6 +26,7 @@ const Footer = () => {
           <ul className="flex flex-col tedxt  text-neutral-400">
             {platformLinks.map((platformLink, index) => (
               <a
+                key={index}
                 className="mb-2 hover:text-neutral-200"
                 href={platformLink.href}
               >
@@ -38,6 +40,7 @@ const Footer = () => {
           <ul className="flex flex-col tedxt  text-neutral-400">
             {communityLinks.map((communitytLink, index) => (
               <a
+                key={index}
                 className="mb-2 hover:text-neutral-200"
                 href={communitytLink.href}
               >

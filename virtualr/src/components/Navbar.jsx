@@ -37,7 +37,7 @@ const Navbar = () => {
               Sign in
             </a>
             <a
-              className="py-2 px-3 bg-gradient-to-r from-orange-500 to-orange-800 rounded-md hover:from-orange-500 hover:to-orange-700 transition duration-100"
+              className="py-2 px-3 bg-gradient-to-r from-orange-500 to-orange-800 rounded-md hover:from-orange-500 hover:to-orange-600 "
               href="#"
             >
               Create an account
