@@ -54,17 +54,22 @@ const Navbar = () => {
             <ul>
               {navItems.map((navItem, index) => (
                 <li className=" py-4" key={index}>
-                  <a href={navItem.href}>{navItem.label}</a>
+                  <a className=" hover:text-neutral-300" href={navItem.href}>
+                    {navItem.label}
+                  </a>
                 </li>
               ))}
             </ul>
             <div className="flex space-x-6">
               {" "}
-              <a className="py-2 px-3 border rounded-md" href="#">
+              <a
+                className="py-2 px-3 border rounded-md hover:border-neutral-400"
+                href="#"
+              >
                 Sign in
               </a>
               <a
-                className="py-2 px-3 bg-gradient-to-r from-orange-500 to-orange-800 rounded-md"
+                className="py-2 px-3 bg-gradient-to-r from-orange-500 to-orange-800 rounded-md hover:from-orange-500 hover:to-orange-600 "
                 href="#"
               >
                 Create an account
